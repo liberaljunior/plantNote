@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_contextbox">
+
+
+        <EditText
+
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="식물 정보 검색 (ex.드라코 물주기)"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:id="@+id/goSearch"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnMainAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:padding="7dp"
+            android:src="@drawable/ic_registerbtn"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/noplant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="70dp"
+                android:visibility="visible"
+
+                />
+
+            <GridView
+
+                android:id="@+id/gridMainList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="4dp"
+                android:numColumns="auto_fit"
+                android:scrollbarStyle="outsideInset"
+                android:smoothScrollbar="true"
+                android:verticalSpacing="20dp">
+
+            </GridView>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout><!-- android:clipToPadding="false"
+    android:paddingBottom="48dp"-->
